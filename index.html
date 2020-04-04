@@ -16,7 +16,7 @@
     <h3 class="bg-info text-white text-center py-2 rounded">個別課券販賣機</h3>
     <!-- 1.菜單區塊（套用bootstrap 卡片）-->
     <div class="row mt-4" id="menu">
-      <div class="col-3" id="item-1">
+      <div class="col-12 col-md-6 col-lg-3" id="item-1">
         <div class="card">
           <img class="card-img-top"
             src="https://tshop.r10s.jp/gakufu-nets/cabinet/213001-214000/213429.jpg?fitin=330:330" alt="Card image cap"
@@ -57,7 +57,7 @@
       </div>
 
 
-      <div class="col-3" id="item-2">
+      <div class="col-12 col-md-6 col-lg-3" id="item-2">
         <div class="card">
           <img class="card-img-top" src="https://vthumb.ykimg.com/054101015E1537ADAD8C709787BAE4D1" alt="Card image cap"
             style="width: 250px;height: 300px;">
@@ -98,7 +98,7 @@
       </div>
 
 
-      <div class="col-3" id="item-3">
+      <div class="col-12 col-md-6 col-lg-3" id="item-3">
         <div class="card">
           <img class="card-img-top" src="https://live.staticflickr.com/2167/2132200711_3e69441793_z.jpg"
             alt="Card image cap" style="width: 250px;height: 300px;">
@@ -137,7 +137,7 @@
           </div>
         </div>
       </div>
-      <div class="col-3" id="item-4">
+      <div class="col-12 col-md-6 col-lg-3" id="item-4">
         <div class="card">
           <img class="card-img-top" src="https://imgur.dcard.tw/YqagT0U.jpg" alt="Card image cap"
             style="width: 250px;height: 300px;">
@@ -181,27 +181,34 @@
     </div>
 
     <!-- 2.顯示目前已選區塊（套用bootstrap list group） -->
-    <h4 class="mt-3">已選擇課程</h4>
-    <div>
-      <div class="cart">
+    <h4 class="container mt-3">已選擇課程</h4>
+    <div class="row">
+      <div class="cart col-12 col-md-6 col-lg-3">
         <span>鋼琴課：<span id="piano-amount">0</span>堂</span>
         <button class="btn btn-outline-dark add-btn btn-sm" id="pianoPlus">+</button>
         <button class="btn btn-outline-dark minus-btn btn-sm" id="pianoMinus">-</button>
+      </div>
+      <div class="cart col-12 col-md-6 col-lg-3">
         <span>小提琴課：<span id="violin-amount">0</span>堂</span>
         <button class="btn btn-outline-dark add-btn btn-sm" id="violinPlus">+</button>
         <button class="btn btn-outline-dark minus-btn btn-sm" id="violinMinus">-</button>
       </div>
-      <div class="cart">
+      <div class="cart col-12 col-md-6 col-lg-3">
         <span>中國笛課：<span id="flute-amount">0</span>堂</span>
         <button class="btn btn-outline-dark add-btn btn-sm" id="flutePlus">+</button>
         <button class="btn btn-outline-dark minus-btn btn-sm" id="fluteMinus">-</button>
+      </div>
+      <div class="cart col-12 col-md-6 col-lg-3">
         <span>歌唱課：<span id="singer-amount">0</span>堂</span>
         <button class="btn btn-outline-dark add-btn btn-sm" id="singerPlus">+</button>
         <button class="btn btn-outline-dark minus-btn btn-sm" id="singerMinus">-</button>
       </div>
-      <div class="cart">
-        <button type="button" class="btn btn-primary mt-3 mx-4" id="submit-button">購物車結帳</button>
-        <button type="button" class="btn btn-danger mt-3 mx-4" id="clear-button">清空購物車</button>
+      <div class="row">
+        <div class="col-4 col-md-4 col-lg-4"><button type="button" class="btn btn-primary mt-3 mx-4"
+            id="submit-button">購物車結帳</button>
+        </div>
+        <div class="col-4 col-md-4 col-lg-4"><button type="button" class="btn btn-danger mt-3 mx-4"
+            id="clear-button">清空購物車</button></div>
       </div>
 
     </div>
