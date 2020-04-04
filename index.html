@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container my-3 py-3 border rounded">
+    <h3 class="bg-info text-white text-center py-2 rounded">個別課券販賣機</h3>
+    <!-- 1.菜單區塊（套用bootstrap 卡片）-->
+    <div class="row mt-4" id="menu">
+      <div class="col-3" id="item-1">
+        <div class="card">
+          <img class="card-img-top"
+            src="https://tshop.r10s.jp/gakufu-nets/cabinet/213001-214000/213429.jpg?fitin=330:330" alt="Card image cap"
+            style="width: 250px;height: 300px;">
+          <div class="card-body text-center">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary card-title" data-toggle="modal" data-target="#pianoModal">
+              鋼琴 一之瀨老師
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="pianoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="pianoModalLabel">一之瀨 老師</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    鋼琴家阿字野嫡傳弟子、被譽為被上帝挑選的雙手<br>
+                    天才日本鋼琴家，曾獲得蕭邦鋼琴大賽冠軍<br>
+                    並同時拿下瑪祖卡舞曲獎、協奏曲獎、奏鳴曲獎三項大獎
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="cost font-weight-bold">3000 NTD/堂</p>
+            <button class="btn btn-success add-to-cart" id="pianoAdd">選課</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-3" id="item-2">
+        <div class="card">
+          <img class="card-img-top" src="https://vthumb.ykimg.com/054101015E1537ADAD8C709787BAE4D1" alt="Card image cap"
+            style="width: 250px;height: 300px;">
+          <div class="card-body text-center">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary card-title" data-toggle="modal" data-target="#violinModal"
+              id="violinInfo">
+              小提琴 靜香老師
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="violinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="violinModalLabel">靜香 老師</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    日本小提琴家<br>
+                    小學登上大雄電視台演奏小提琴<br>
+                    琴聲細膩感情豐富
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="cost font-weight-bold">2000 NTD/堂 </p>
+            <button class="btn btn-success add-to-cart" id="violinAdd">選課</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-3" id="item-3">
+        <div class="card">
+          <img class="card-img-top" src="https://live.staticflickr.com/2167/2132200711_3e69441793_z.jpg"
+            alt="Card image cap" style="width: 250px;height: 300px;">
+          <div class="card-body text-center">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary card-title" data-toggle="modal" data-target="#fluteModal"
+              id="fluteInfo">
+              中國笛 佐為老師
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="fluteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="fluteModalLabel">佐為 老師</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    靈界中國笛第一把交椅<br>
+                    平安時代中國笛流派唯一真傳<br>
+                    附身親授笛藝
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="cost font-weight-bold">4000 NTD/堂</p>
+            <button class="btn btn-success add-to-cart" id="fluteAdd">選課</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-3" id="item-4">
+        <div class="card">
+          <img class="card-img-top" src="https://imgur.dcard.tw/YqagT0U.jpg" alt="Card image cap"
+            style="width: 250px;height: 300px;">
+          <div class="card-body text-center">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary card-title" data-toggle="modal" data-target="#singerModal"
+              id="singerInfo">
+              流行歌唱 美人魚老師
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="singerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="singerModalLabel">美人魚 老師</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    由七海露亞、沙羅、可可、洞院莉娜、寶生波音、<br>
+                    諾葳爾、香蓮、星羅等美人魚老師組成的團隊<br>
+                    當代最hito的女團<br>
+                    被譽為拯救世界的歌聲
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <p class="cost font-weight-bold">5000 NTD/堂</p>
+            <button class="btn btn-success add-to-cart" id="singerAdd">選課</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2.顯示目前已選區塊（套用bootstrap list group） -->
+    <h4 class="mt-3">已選擇課程</h4>
+    <div>
+      <div class="cart">
+        <span>鋼琴課：<span id="piano-amount">0</span>堂</span>
+        <button class="btn btn-outline-dark add-btn btn-sm" id="pianoPlus">+</button>
+        <button class="btn btn-outline-dark minus-btn btn-sm" id="pianoMinus">-</button>
+        <span>小提琴課：<span id="violin-amount">0</span>堂</span>
+        <button class="btn btn-outline-dark add-btn btn-sm" id="violinPlus">+</button>
+        <button class="btn btn-outline-dark minus-btn btn-sm" id="violinMinus">-</button>
+      </div>
+      <div class="cart">
+        <span>中國笛課：<span id="flute-amount">0</span>堂</span>
+        <button class="btn btn-outline-dark add-btn btn-sm" id="flutePlus">+</button>
+        <button class="btn btn-outline-dark minus-btn btn-sm" id="fluteMinus">-</button>
+        <span>歌唱課：<span id="singer-amount">0</span>堂</span>
+        <button class="btn btn-outline-dark add-btn btn-sm" id="singerPlus">+</button>
+        <button class="btn btn-outline-dark minus-btn btn-sm" id="singerMinus">-</button>
+      </div>
+      <div class="cart">
+        <button type="button" class="btn btn-primary mt-3 mx-4" id="submit-button">購物車結帳</button>
+        <button type="button" class="btn btn-danger mt-3 mx-4" id="clear-button">清空購物車</button>
+      </div>
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>
